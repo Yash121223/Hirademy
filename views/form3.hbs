@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="/css/form1.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+   
+    <main>
+        
+        <div class="container">
+            <form action="/updatedata" method="post">
+                <h2>Update Information</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="id">User Id</label>
+                        <input type="text" placeholder="Enter user id" name="id" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="user">Name</label>
+                        <input type="text" placeholder="Enter Name" name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="mobile">Mobile</label>
+                        <input type="number" placeholder="Enter mobile number" name="mobile" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="salary">Salary</label>
+                        <input type="number" placeholder="Enter salary" name="salary" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="city">City</label>
+                        <input type="text" placeholder="Enter city" name="city" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="country">Country</label>
+                        <input type="text" placeholder="Enter country" name="country" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="department">Department</label>
+                        <input type="text" placeholder="Enter department" name="department" required>
+                    </div>
+                   
+                    <div class="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

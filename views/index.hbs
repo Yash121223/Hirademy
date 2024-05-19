@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirademy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hirademy<span>.</span></a>
+    </header>
+
+    <main>
+        <h2>Crud Operations</h2>
+        <div class="box-container">
+            <div class="box">
+                <button onclick="location.href='/register'">Registration</button>
+            </div>
+           <div class="box">
+                <button><a href="#" id="find-link">Find</a></button>
+            </div>
+            <div class="box">
+                <button onclick="location.href='/update'">Update</button>
+            </div>
+            
+            <div class="box">
+                <button><a href="#" id="profile-link">Delete</a></button>
+            </div>
+        </div>
+
+        <div id="profile-modal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="search-container" id="del">
+                <form action="/deletedata" method="post">
+                <input type="number" id="search-bar" placeholder="Search..." name="id">
+                <button type="submit">Delete</button>
+                </form>
+            </div>
+            
+            </div>
+        </div>
+
+        <div id="find-modal" class="modal">
+            <div class="modal-content">
+            <span class="close1">&times;</span>
+            <div class="search-container">
+                <form action="/find" method="post">
+                <input type="number" id="search-bar" placeholder="Search..." name="id">
+                <button type="submit">Find</button>
+                </form>
+            </div>
+            
+            </div>
+        </div>
+    
+    </main>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

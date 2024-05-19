@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="/css/form2.css">
+</head>
+<body>
+   
+    <main>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   {{#info}}
+                            <tr><td>{{id}}</td>
+                            <td>{{name}}</td>
+                            <td>{{mobile}}</td>
+                            <td>{{email}}</td>
+                            <td>{{salary}}</td>
+                            <td>{{city}}</td>
+                            <td>{{country}}</td>
+                            <td>{{department}}</td></tr>
+
+                           {{/info}}
+                    <!-- Table rows will go here -->
+                    <!-- More rows can be added similarly -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script>
+        function searchFunction() {
+            // Add search functionality here
+            alert('Search functionality is not implemented yet.');
+        }
+    </script>
+</body>
+</html>
